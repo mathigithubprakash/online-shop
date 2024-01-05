@@ -53,6 +53,7 @@ end
 product1 = Product.new("Laptop", 800, 10)
 product2 = Product.new("Smartphone", 500, 20)
 product3 = Product.new("tab", 300, 25)
+product4 = Product.new("smartwtach",500,15)
 
 
 shop = Shop.new
@@ -60,6 +61,7 @@ shop = Shop.new
 shop.add_product(product1)
 shop.add_product(product2)
 shop.add_product(product3)
+shop.add_product(product4)
 product1.update_price(900)
 
 shop.view_stock
