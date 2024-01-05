@@ -1,3 +1,5 @@
+# Why you need below Product class, you have already seperated product class to different file 
+# You should add/required to load the file 
 class Product
   attr_accessor :name, :price, :stock_quantity
 
@@ -13,6 +15,7 @@ class Product
   end
 end
 
+# Same goes here
 class Shop
   attr_accessor :products
 
@@ -50,6 +53,8 @@ end
 
 shop = Shop.new
 
+# can you move below logic to product class itself?
+# and rename this file to online_shop as mail class or module?
 def add_product_dynamically(shop)
   puts "Enter product details:"
   print "Name: "
